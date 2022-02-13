@@ -103,8 +103,20 @@ public class MainApplication extends Application implements ReactApplication {
 ```
 
 ### android
+1. Update `MainActivity.java` with the following additions:
 
+```java
 
+import com.humanscape.rarenote.RNUserInterfaceStyle.RNUserInterfaceStyleManager; // <- add this necessary import
+
+public class MainActivity extends ReactActivity {
+  @Override
+    protected void onCreate(Bundle savedInstanceState) {
+      RNUserInterfaceStyleManager.initSystemTheme(getApplicationContext(), "your preference name"); // <- initialization system theme
+      super.onCreate(savedInstanceState);
+    }
+}
+```
 ## Usage
 ```javascript
 import RNUserInterfaceStyle from 'react-native-override-user-interface-style';
