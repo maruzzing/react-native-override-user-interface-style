@@ -117,10 +117,25 @@ public class MainActivity extends ReactActivity {
     }
 }
 ```
+
 ## Usage
 ```javascript
 import RNUserInterfaceStyle from 'react-native-override-user-interface-style';
 
-// TODO: What to do with the module?
-RNUserInterfaceStyle;
+// or ES6+ destructured imports
+
+import { getTheme, setTheme } from 'react-native-override-user-interface-style';
+```
+
+### Properties
+- theme (String) 
+  - default - follows system appearance
+  - light - light mode
+  - dark - dark mode
+
+
+### API
+```javascript
+function getTheme():Promise<Theme | null>; // Gets saved theme type;
+function setTheme(theme:Theme): void; // Set theme type
 ```
