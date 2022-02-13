@@ -16,9 +16,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github_account/react-native-override-user-interface-style.git",
-    "baseUrl": "https://github.com/github_account/react-native-override-user-interface-style"
+    "url": "https://github.com/maruzzing/react-native-override-user-interface-style.git"
   },
+  "homepage": "https://github.com/maruzzing/react-native-override-user-interface-style.git",
   "keywords": [
     "react-native"
   ],
