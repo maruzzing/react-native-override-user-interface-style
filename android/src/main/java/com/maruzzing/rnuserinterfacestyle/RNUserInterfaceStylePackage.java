@@ -1,4 +1,5 @@
 // RNUserInterfaceStylePackage.java
+package com.maruzzing.rnuserinterfacestyle;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.NativeModule;

@@ -1,3 +1,5 @@
+package com.maruzzing.rnuserinterfacestyle;
+
 import android.content.Context;
 
 import androidx.appcompat.app.AppCompatDelegate;
