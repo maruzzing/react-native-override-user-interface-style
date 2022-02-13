@@ -1,19 +1,15 @@
 // RNUserInterfaceStyleModule.java
 
 package com.maruzzing.rnuserinterfacestyle;
-
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
-import com.facebook.react.bridge.Callback;
+import com.facebook.react.bridge.Promise;
+
 
 public class RNUserInterfaceStyleModule extends ReactContextBaseJavaModule {
-
-    private final ReactApplicationContext reactContext;
-
-    public RNUserInterfaceStyleModule(ReactApplicationContext reactContext) {
-        super(reactContext);
-        this.reactContext = reactContext;
+    RNUserInterfaceStyleModule(ReactApplicationContext context) {
+        super(context);
     }
 
     @Override
@@ -22,8 +18,14 @@ public class RNUserInterfaceStyleModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void sampleMethod(String stringArgument, int numberArgument, Callback callback) {
-        // TODO: Implement some actually useful functionality
-        callback.invoke("Received numberArgument: " + numberArgument + " stringArgument: " + stringArgument);
+    public void getTheme(Promise promise) {
+        promise.resolve(SharedHandler.getInstance().getString("theme"));
+    }
+
+    @ReactMethod
+    public void setTheme(String theme, Promise promise) {
+        RNUserInterfaceStyleManager.setSystemTheme(theme, true);
+        promise.resolve(null);
     }
 }
+
