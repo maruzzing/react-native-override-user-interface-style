@@ -1,7 +1,7 @@
 {
   "name": "react-native-override-user-interface-style",
   "title": "React Native Override User Interface Style",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Native package to override userInterfaceStyle on iOS 13.0+ and AppCompatDelegate.setDefaultNightMode on Android10+",
   "main": "index.js",
   "files": [
