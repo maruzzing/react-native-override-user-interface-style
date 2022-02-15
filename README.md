@@ -6,7 +6,7 @@
 # Install & setup module
 $ npm install react-native-override-user-interface-style --save
 # --- or ---
-$ yarn add react-native-override-user-interface-styl
+$ yarn add react-native-override-user-interface-style
 
 # If you're developing your app using iOS, don't forget to run this command
 $ cd ios/ && pod install
