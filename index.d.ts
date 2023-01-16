@@ -1,6 +1,8 @@
-export type Theme = "default" | "light" | "dark";
+export type Theme = 'default' | 'light' | 'dark';
 
-export default class RNUserInterfaceStyle {
-  static getTheme(): Promise<Theme | null>;
-  static setTheme(theme: Theme): void;
+declare namespace _default {
+  const getTheme: () => Promise<Theme | null>;
+  const setTheme: (theme: Theme) => void;
 }
+
+export default _default;
